@@ -68,3 +68,8 @@ func (v *Vertex) GetArc(Destination int) (distance int64, ok bool) {
 	distance, ok = v.arcs[Destination]
 	return
 }
+
+//GetArcs return vertex arcs
+func (v *Vertex) GetArcs() map[int]int64 {
+	return v.arcs
+}
